@@ -13,17 +13,17 @@ body {
     box-sizing: border-box;
 }
 :root {
-    --blue-color: #007bff;
-    /* --dark-color: #343a40; */
-    /* --gray-color: #6c757d; */
-    /* --lite-gray: #f8f9fa; */
+    --blue-color: #0066ff;
     --white-color: #ffffff;
+    --dark-color: #000000;
+    --gray-color: #7d7c83;
+    --lite-gray: #ededee;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Roboto Mono', monospace;
 }
 /* navbar */
 .navbar-div{
-    background-color: var(--blue-color);
+    background-color: var(--white-color)
 }
 .nav-name{
     margin: 0;
@@ -31,8 +31,8 @@ body {
     font-size: 25px;
     font-weight: 900;
     text-transform: capitalize;
-    letter-spacing: 2px;
-    color: var(--white-color);
+    /* letter-spacing: 2px; */
+    color: var(--blue-color);
 }
 .nav-items {
     position: relative;
@@ -40,11 +40,11 @@ body {
     font-weight: 500;
     text-transform: capitalize;
     letter-spacing: 1px;
-    margin: 0 10px;
-    color: var(--white-color)
+    /* margin: 0 10px; */
+    color: var(--blue-color)
 }
 .nav-items:hover{
-    color: var(--white-color);
+    color: var(--gray-color);
 }
 .nav-items::before {
     content: '';
@@ -52,7 +52,7 @@ body {
     width: 100%;
     height: 2px;
     border-radius: 4px;
-    background-color: var(--white-color);
+    background-color: var(--gray-color);
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -64,5 +64,20 @@ body {
     transform: scaleX(1);
 }
 .hamburg-icon{
-    color: var(--white-color);
+    color: var(--blue-color);
+}
+/* banner */
+.banner-section{
+    background-color: red;
+    height: 100vh;
+}
+.banner-content{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: red;
+}
+.banner-content h1{
+    /* padding-top: 100px; */
 }
