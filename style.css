@@ -102,6 +102,6 @@ body {
     color: var(--gray-color);
     font-size: 20px;
 }
-.banner-contents h5 span:hover{
+.banner-contents h5 span{
     color: var(--blue-color);
 }
