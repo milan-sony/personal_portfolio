@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: white;
+    background-color: var(--white-color);
 }
 *{
     margin: 0;
@@ -68,7 +68,7 @@ body {
 }
 /* banner */
 .banner-section{
-    background-color: red;
+    background-color: var(--white-color);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -79,4 +79,29 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center; 
+}
+.banner-contents h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--blue-color);
+    font-family: var(--primary-font);
+}
+.banner-contents h3{
+    padding-top: 20px;
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+.banner-contents h3 span{
+    color: var(--blue-color);
+}
+.banner-contents h5{
+    /* padding-top: 10px; */
+    font-family: var(--secondary-font);
+    color: var(--gray-color);
+    font-size: 20px;
+}
+.banner-contents h5 span:hover{
+    color: var(--blue-color);
 }
