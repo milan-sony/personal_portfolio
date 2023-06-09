@@ -34,6 +34,9 @@ body {
     /* letter-spacing: 2px; */
     color: var(--blue-color);
 }
+.nav-name:hover{
+    color: var(--gray-color);
+}
 .nav-items {
     position: relative;
     font-family: var(--secondary-font);
