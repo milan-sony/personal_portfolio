@@ -105,3 +105,27 @@ body {
 .banner-contents h5 span{
     color: var(--blue-color);
 }
+/* about */
+.heading-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-bg-text{
+    font-size: 100px;
+    font-weight: 900;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    color: var(--white-color);
+    letter-spacing: 12px;
+    -webkit-text-stroke: 1px var(--blue-color);
+}
+.heading-fg-text{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    color: var(--blue-color);
+}
