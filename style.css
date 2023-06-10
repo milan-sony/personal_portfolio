@@ -135,7 +135,6 @@ body {
     font-family: var(--primary-font);
     color: var(--blue-color);
 }
-
 .desc{
     font-size: 24px;
     font-family: var(--primary-font);
@@ -153,7 +152,6 @@ body {
     font-size: 16px;
     font-family: var(--primary-font);
 }
-
 .about-img{
     display: flex;
     flex-direction: column;
@@ -165,6 +163,37 @@ body {
     font-size: 16px;
     font-family: var(--parimary-font);
     color: var(--gray-color);
+}
+/* education */
+.education-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    margin-top: 20px;
+}
+.card-bg{
+    background-color: var(--white-color);
+}
+.card-bg h5{
+    color: var(--dark-color);
+    font-size: 18px;
+    font-family: var(--secondary-font);
+}
+.card-bg h4{
+    color: var(--blue-color);
+    font-size: 18px;
+    font-family: var(--secondary-font);
+}
+.card-bg p{
+    color: var(--gray-color);
+    font-size: 16px;
+    font-size: var(--parimary-font);
+}
+.card-bg:hover{
+    background-color: var(--blue-color);
 }
 
 .bg-check1{
