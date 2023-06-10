@@ -104,6 +104,7 @@ body {
 .banner-contents h5{
     /* padding-top: 10px; */
     font-size: 24px;
+    text-align: center;
     font-family: var(--secondary-font);
     color: var(--gray-color);
 }
@@ -135,39 +136,46 @@ body {
     color: var(--blue-color);
 }
 
+.desc{
+    font-size: 24px;
+    font-family: var(--primary-font);
+    color: var(--dark-color);
+}
+.sub-desc{
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    color: var(--gray-color);
+}
+.sub-desc span{
+    color: var(--blue-color);
+}
+.quote{
+    font-size: 16px;
+    font-family: var(--primary-font);
+}
+
+.about-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-img-text{
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: var(--parimary-font);
+    color: var(--gray-color);
+}
+
+.bg-check1{
+    background-color: red;
+}
+.bg-check2{
+    background-color: yellow;
+}
+
 
 /* Custom Media Query */
-/* @media (max-width: 425px) {
-    .address-box {
-        padding-top: 10px;
-    }
-} */
-
-
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {
-
-} */
-
-/* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {
-
-} */
-
-/* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {
-
-} */
-
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
-
-} */
-
-
 /* Small devices */
 @media (max-width: 576px) {
     .banner-contents h1{
@@ -180,17 +188,14 @@ body {
         font-size: 16px;
     }
 }
-
 /* Medium devices */
 @media (max-width: 768px) {
 
 }
-
 /* Large devices */
 @media (max-width: 992px) {
 
 }
-
 /* Extra large devices */
 @media (max-width: 1200px) {
 
