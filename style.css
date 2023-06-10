@@ -28,7 +28,7 @@ body {
 .nav-name{
     margin: 0;
     font-family: var(--primary-font);
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 900;
     text-transform: capitalize;
     /* letter-spacing: 2px; */
@@ -39,6 +39,7 @@ body {
 }
 .nav-items {
     position: relative;
+    font-size: 16px;
     font-family: var(--secondary-font);
     font-weight: 500;
     text-transform: capitalize;
@@ -68,6 +69,7 @@ body {
 }
 .hamburg-icon{
     color: var(--blue-color);
+    font-size: 24px;
 }
 /* banner */
 .banner-section{
@@ -91,8 +93,8 @@ body {
 }
 .banner-contents h3{
     padding-top: 20px;
+    font-size: 30px;
     font-family: var(--primary-font);
-    font-size: 40px;
     font-weight: 500;
     color: var(--dark-color);
 }
@@ -101,34 +103,95 @@ body {
 }
 .banner-contents h5{
     /* padding-top: 10px; */
+    font-size: 24px;
     font-family: var(--secondary-font);
     color: var(--gray-color);
-    font-size: 20px;
 }
 .banner-contents h5 span{
     color: var(--blue-color);
 }
 /* about */
-.heading-div{
+.main-heading-div{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.heading-bg-text{
-    font-size: 120px;
+.main-heading-bg-text{
+    font-size: 60px;
     font-weight: 900;
     font-family: var(--primary-font);
     text-transform: uppercase;
     color: var(--white-color);
-    letter-spacing: 12px;
+    letter-spacing: 1px;
     -webkit-text-stroke: 1px var(--gray-color);
 }
-.heading-fg-text{
+.main-heading-fg-text{
     position: absolute;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 24px;
     font-weight: 600;
     font-family: var(--primary-font);
     color: var(--blue-color);
+}
+
+
+/* Custom Media Query */
+/* @media (max-width: 425px) {
+    .address-box {
+        padding-top: 10px;
+    }
+} */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {
+
+} */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {
+
+} */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+
+} */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+
+} */
+
+
+/* Small devices */
+@media (max-width: 576px) {
+    .banner-contents h1{
+        font-size: 30px;
+    }
+    .banner-contents h3{
+        font-size: 24px;
+    }
+    .banner-contents h5{
+        font-size: 16px;
+    }
+}
+
+/* Medium devices */
+@media (max-width: 768px) {
+
+}
+
+/* Large devices */
+@media (max-width: 992px) {
+
+}
+
+/* Extra large devices */
+@media (max-width: 1200px) {
+
 }

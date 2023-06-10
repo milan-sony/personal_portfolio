@@ -1,2 +1,44 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace;
+
+https://www.editorx.com/shaping-design/article/font-size#:~:text=Optimal%20font%20sizes%20for%20desktop&text=Body%20text%20%2D%20Font%20sizes%20should,can%20be%20pleasant%20to%20read.
+
+deskop:
+35px
+30px
+18px
+16px
+
+mobile:
+30px
+21px
+18px
+16px
+
+https://pimpmytype.com/font-size/
+
+deskop:
+60px
+24px 
+16px 
+
+mobile:
+32px 
+16px
+16px 
+
+--------------------
+
+Overall font size
+
+Deskop:
+Main Heading 60px
+sub Heading 30px
+Body 24px
+Body2 18px
+
+Mobile:
+Main Heading 30px
+sub Heading 24px
+Body 18px
+body2 16px
