@@ -165,7 +165,7 @@ body {
     color: var(--gray-color);
 }
 /* education */
-.education-text{
+.head-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,13 +195,15 @@ body {
 .card-bg:hover{
     background-color: var(--blue-color);
 }
+/* skills */
+.progressbar-div{
+    margin-top: 20px;
+}
+/* .marquee-items{
+    display: flex;
+    justify-content: space-between;
+} */
 
-.bg-check1{
-    background-color: red;
-}
-.bg-check2{
-    background-color: yellow;
-}
 
 
 /* Custom Media Query */
