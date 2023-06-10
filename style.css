@@ -16,8 +16,8 @@ body {
     --blue-color: #0066ff;
     --white-color: #ffffff;
     --dark-color: #000000;
-    --gray-color: #7d7c83;
-    --lite-gray: #ededee;
+    --gray-color: #808080;
+    --lite-gray: #d3d3d3;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Roboto Mono', monospace;
 }
@@ -119,18 +119,18 @@ body {
     align-items: center;
 }
 .main-heading-bg-text{
-    font-size: 60px;
+    font-size: 120px;
     font-weight: 900;
     font-family: var(--primary-font);
     text-transform: uppercase;
     color: var(--white-color);
     letter-spacing: 1px;
-    -webkit-text-stroke: 1px var(--gray-color);
+    -webkit-text-stroke: 1px var(--lite-gray);
 }
 .main-heading-fg-text{
     position: absolute;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 60px;
     font-weight: 600;
     font-family: var(--primary-font);
     color: var(--blue-color);
