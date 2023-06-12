@@ -2,16 +2,6 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-    background-color: var(--white-color);
-}
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: 0;
-    box-sizing: border-box;
-}
 :root {
     --blue-color: #0066ff;
     --white-color: #ffffff;
@@ -20,6 +10,9 @@ body {
     --lite-gray: #d3d3d3;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Roboto Mono', monospace;
+}
+body {
+    background-color: var(--white-color);
 }
 /* navbar */
 .navbar-div{
@@ -71,6 +64,7 @@ body {
     color: var(--blue-color);
     font-size: 24px;
 }
+
 /* banner */
 .banner-section{
     background-color: var(--white-color);
@@ -111,6 +105,7 @@ body {
 .banner-contents h5 span{
     color: var(--blue-color);
 }
+
 /* about */
 .main-heading-div{
     position: relative;
@@ -164,6 +159,7 @@ body {
     font-family: var(--parimary-font);
     color: var(--gray-color);
 }
+
 /* education */
 .head-text{
     display: flex;
@@ -195,15 +191,35 @@ body {
 .card-bg:hover{
     background-color: var(--blue-color);
 }
-/* skills */
+/* progressbar */
 .progressbar-div{
     margin-top: 20px;
 }
-/* .marquee-items{
+/* marquee items */
+.marquee {
+  --gap: 1px; /* Adjust the gap between items as needed */
     display: flex;
-    justify-content: space-between;
-} */
-
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+}
+.marquee_content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+}
+.marquee_content li{
+    list-style-type: none;
+}
+.marquee_content {
+    animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+    100% { transform: translateX(0%); }
+    0% { transform: translateX(-100%); }
+}
 
 
 /* Custom Media Query */
