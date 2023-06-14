@@ -197,7 +197,7 @@ body {
 }
 /* marquee items */
 .marquee {
-  --gap: 1px; /* Adjust the gap between items as needed */
+    --gap: 50px; /* Adjust the gap between items as needed */
     display: flex;
     overflow: hidden;
     user-select: none;
@@ -210,15 +210,15 @@ body {
     min-width: 100%;
     gap: var(--gap);
 }
-.marquee_content li{
-    list-style-type: none;
-}
-.marquee_content {
-    animation: marquee 10s linear infinite;
-}
 @keyframes marquee {
     100% { transform: translateX(0%); }
     0% { transform: translateX(-100%); }
+}
+.marquee_content {
+    animation: marquee 20s linear infinite;
+}
+.marquee_content li{
+    list-style-type: none;
 }
 
 
