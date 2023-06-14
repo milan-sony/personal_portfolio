@@ -138,7 +138,7 @@ body {
 .sub-desc{
     font-size: 16px;
     font-family: var(--secondary-font);
-    color: var(--gray-color);
+    color: var(--dark-color);
 }
 .sub-desc span{
     color: var(--blue-color);
