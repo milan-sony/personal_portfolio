@@ -177,7 +177,7 @@ body {
 .card-heads{
     color: var(--dark-color);
     font-size: 18px;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
 }
 .card-titles{
     color: var(--blue-color);
