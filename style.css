@@ -63,7 +63,6 @@ body {
 .hamburg-icon{
     color: var(--blue-color);
     font-size: 24px;
-    font-weight: bold;
 }
 
 /* banner */
@@ -175,17 +174,17 @@ body {
     background-color: var(--white-color);
     padding: 20px;
 }
-.card-bg h5{
+.card-heads{
     color: var(--dark-color);
     font-size: 18px;
     font-family: var(--secondary-font);
 }
-.card-bg h4{
+.card-titles{
     color: var(--blue-color);
     font-size: 18px;
     font-family: var(--secondary-font);
 }
-.card-bg p{
+.card-subtitles{
     color: var(--gray-color);
     font-size: 16px;
     font-size: var(--parimary-font);
