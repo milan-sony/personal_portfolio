@@ -189,10 +189,10 @@ body {
     font-size: 16px;
     font-size: var(--parimary-font);
 }
-.card-bg:hover{
+/* .card-bg:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */
 
-}
 /* progressbar */
 .progressbar-div{
     margin-top: 20px;
@@ -224,12 +224,40 @@ body {
 }
 
 /* project */
-.project-card{
-    width: 18rem;
-    height: auto;
+.badge-item{
+    background-color: var(--blue-color);
+    color: var(--white-color);
 }
-
-
+.project-links{
+    display: flex;
+    justify-content: space-between;
+}
+.project-links a{
+    text-decoration: none;
+    color: var(--gray-color);
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.project-links a:hover{
+    color: var(--blue-color);
+}
+.view-all-projects{
+    display: flex;
+    justify-content: center;
+}
+.view-all-projects a span{
+    color: var(--gray-color);
+    background-color: var(--lite-gray);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.view-all-projects a span:hover{
+    background-color: var(--white-color);
+    color: var(--gray-color);
+}
 /* Custom Media Query */
 /* Small devices */
 @media (max-width: 576px) {
