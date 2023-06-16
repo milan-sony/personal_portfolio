@@ -63,6 +63,7 @@ body {
 .hamburg-icon{
     color: var(--blue-color);
     font-size: 24px;
+    font-weight: bold;
 }
 
 /* banner */
