@@ -223,6 +223,12 @@ body {
     list-style-type: none;
 }
 
+/* project */
+.project-card{
+    width: 18rem;
+    height: auto;
+}
+
 
 /* Custom Media Query */
 /* Small devices */
