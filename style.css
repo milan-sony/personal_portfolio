@@ -273,15 +273,6 @@ body {
 .mail-tel-link a:hover{
     color: var(--blue-color);
 }
-.account-icons{
-    display: flex;
-    justify-content: center;
-}
-.account-icons p{
-    padding-right: 30px;
-    font-size: 20px;
-    color: var(--blue-color);
-}
 .mail-text{
     display: flex;
     justify-content: center;
@@ -309,11 +300,42 @@ body {
     color: var(--white-color);
     font-size: 16px;
     font-family: var(--parimary-font);
-    width: 100px;
+    width: 150px;
     height: auto;
     border-radius: 50px;
 }
+/* footer */
+.account-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account-icons p{
+    padding-right: 30px;
+    font-size: 20px;
+    color: var(--blue-color);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text1{
+    font-size: 18px;
+    font-family: var(--secondary-font);
+    color: var(--gray-color);
+}
+.footer-two{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-text2{
+    font-size: 16px;
+    color: var(--blue-color);
+    font-family: var(--secondary-font);
 
+}
 /* Custom Media Query */
 /* Small devices */
 @media (max-width: 576px) {
