@@ -78,19 +78,23 @@ body {
     align-items: center; 
 }
 .banner-head1{
+    margin: 0;
     font-size: 60px;
     font-weight: 900;
     color: var(--liteblue-color);
     font-family: var(--primary-font);
+    padding-bottom: 20px;
 }
 .banner-head2{
-    padding-top: 20px;
+    margin: 0;
     font-size: 30px;
     font-family: var(--primary-font);
     font-weight: 500;
     color: var(--darkblue-color);
+    padding-bottom: 10px;
 }
 .banner-head3{
+    margin: 0;
     font-size: 24px;
     text-align: center;
     font-family: var(--secondary-font);
@@ -101,6 +105,9 @@ body {
 }
 
 /* about */
+.about-section{
+    padding-bottom: 40px;
+}
 .main-heading-div{
     position: relative;
     display: flex;
@@ -108,6 +115,7 @@ body {
     align-items: center;
 }
 .main-heading-bg-text{
+    margin: 0;
     font-size: 60px;
     font-weight: 900;
     font-family: var(--primary-font);
@@ -117,6 +125,7 @@ body {
     -webkit-text-stroke: 1px var(--lite-color);
 }
 .main-heading-fg-text{
+    margin: 0;
     position: absolute;
     text-transform: uppercase;
     font-size: 30px;
@@ -125,19 +134,24 @@ body {
     color: var(--liteblue-color);
 }
 .desc{
+    margin: 0;
     font-size: 24px;
     font-family: var(--primary-font);
     color: var(--darkblue-color);
+    padding-bottom: 20px;
 }
 .sub-desc{
+    margin: 0;
     font-size: 16px;
     font-family: var(--secondary-font);
     color: var(--darkblue-color);
+    padding-bottom: 20px;
 }
 .sub-desc span{
     color: var(--liteblue-color);
 }
 .quote{
+    margin: 0;
     font-size: 16px;
     color: var(--darkblue-color);
     font-family: var(--primary-font);
@@ -156,6 +170,9 @@ body {
 }
 
 /* education */
+.education-section{
+    padding-top: 40px;
+}
 .head-text{
     display: flex;
     flex-direction: column;
@@ -165,9 +182,6 @@ body {
 
 /* cards */
 .cards{
-    margin-top: 20px;
-}
-.card-bg{
     padding: 20px;
 }
 .card-heads{
@@ -186,9 +200,14 @@ body {
     font-size: var(--parimary-font);
 }
 
+/* skills */
+.skills-section{
+    padding-top: 40px;
+}
+
 /* progressbar */
 .progressbar-div{
-    margin-top: 20px;
+    padding-top: 20px;
 }
 .progress-bar{
     background-color: var(--liteblue-color);
@@ -220,7 +239,14 @@ body {
     list-style-type: none;
 }
 
+.experience-section{
+    padding-top: 40px;
+}
+
 /* project */
+.project-section{
+    padding-top: 40px;
+}
 .badge-item{
     background-color: var(--lite-color);
     color: var(--liteblue-color);
@@ -257,7 +283,12 @@ body {
 }
 
 /* contact */
+.contact-section{
+    padding-top: 40px;
+}
 .contact-info p{
+    margin: 0;
+    padding-bottom: 20px;
     font-size: 16px; 
     font-family: var(--parimary-font);
     font-weight: 500;
@@ -271,6 +302,8 @@ body {
     color: var(--liteblue-color);
 }
 .mail-text{
+    margin: 0;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     font-size: 24px;
@@ -324,6 +357,7 @@ body {
 
 /* footer */
 .account-icons{
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,12 +371,15 @@ body {
     color: var(--liteblue-color);
 }
 .footer{
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .footer-text1{
+    margin: 0;
+    padding-bottom: 10px;
     font-size: 18px;
     font-family: var(--secondary-font);
     color: var(--liteblue-color);
@@ -352,6 +389,9 @@ body {
     justify-content: flex-end;
 }
 .footer-text2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 16px;
     color: var(--darkblue-color);
     font-family: var(--secondary-font);
