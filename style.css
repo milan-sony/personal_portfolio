@@ -332,10 +332,13 @@ body {
     justify-content: center;
     align-items: center;
 }
-.account-icons p{
+.account-icons a{
     padding-right: 30px;
     font-size: 20px;
     color: var(--darkblue-color);
+}
+.account-icons a:hover{
+    color: var(--liteblue-color);
 }
 .footer{
     display: flex;
