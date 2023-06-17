@@ -279,17 +279,31 @@ body {
     font-size: 24px;
     font-family: var(--secondary-font);
 }
-.form-input{
-    background-color: var(--lite-gray);
-    border-style: solid;
-    border-color: var(--lite-gray);
+.form-control {
     border-radius: 10px;
+    border: none;
+    background: var(--lite-gray)
+}
+.form-control:active, .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: var(--gray-gray); 
+}
+.form-group input{
+    color: var(--dark-color);
+    font-family: var(--parimary-font);
+    font-size: 16px;
+}
+.form-group textarea{
+    color: var(--dark-color);
+    font-family: var(--parimary-font);
+    font-size: 16px;
 }
 ::placeholder{
     color: var(--gray-color) !important;
     font-family: var(--secondary-font);
     font-size: 16px;
-
 }
 .msg-send{
     display: flex;
@@ -304,6 +318,7 @@ body {
     height: auto;
     border-radius: 50px;
 }
+
 /* footer */
 .account-icons{
     display: flex;
