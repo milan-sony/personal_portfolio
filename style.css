@@ -258,6 +258,34 @@ body {
     background-color: var(--white-color);
     color: var(--gray-color);
 }
+
+/* contact */
+.form-input{
+    background-color: var(--lite-gray);
+    border-style: solid;
+    border-color: var(--lite-gray);
+    border-radius: 10px;
+}
+::placeholder{
+    color: var(--gray-color) !important;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+
+}
+.msg-send{
+    display: flex;
+    justify-content: center;
+}
+.msg-send .send-btn{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-family: var(--parimary-font);
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+}
+
 /* Custom Media Query */
 /* Small devices */
 @media (max-width: 576px) {
