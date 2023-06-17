@@ -77,30 +77,26 @@ body {
     flex-direction: column;
     align-items: center; 
 }
-.banner-contents h1{
+.banner-head1{
     font-size: 60px;
     font-weight: 900;
     color: var(--liteblue-color);
     font-family: var(--primary-font);
 }
-.banner-contents h3{
+.banner-head2{
     padding-top: 20px;
     font-size: 30px;
     font-family: var(--primary-font);
     font-weight: 500;
     color: var(--darkblue-color);
 }
-.banner-contents h3 span{
-    color: var(--liteblue-color);
-}
-.banner-contents h5{
-    /* padding-top: 10px; */
+.banner-head3{
     font-size: 24px;
     text-align: center;
     font-family: var(--secondary-font);
-    color: var(--gray-color);
+    color: var(--darkblue-color);
 }
-.banner-contents h5 span{
+.bammer-head3 span{
     color: var(--liteblue-color);
 }
 
