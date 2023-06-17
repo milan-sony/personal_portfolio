@@ -3,11 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 :root {
-    --blue-color: #0066ff;
-    --white-color: #ffffff;
-    --dark-color: #000000;
-    --gray-color: #808080;
-    --lite-gray: #d3d3d3;
+    --darkblue-color: #112D4E;
+    --liteblue-color: #3F72AF;
+    --lite-color: #DBE2EF;
+    --white-color: #F9F7F7;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Roboto Mono', monospace;
 }
@@ -25,10 +24,10 @@ body {
     font-weight: 900;
     text-transform: capitalize;
     /* letter-spacing: 2px; */
-    color: var(--blue-color);
+    color: var(--liteblue-color);
 }
 .nav-name:hover{
-    color: var(--gray-color);
+    color: var(--darkblue-color);
 }
 .nav-items {
     position: relative;
@@ -37,11 +36,10 @@ body {
     font-weight: 500;
     text-transform: capitalize;
     letter-spacing: 1px;
-    /* margin: 0 10px; */
-    color: var(--blue-color)
+    color: var(--liteblue-color)
 }
 .nav-items:hover{
-    color: var(--gray-color);
+    color: var(--darkblue-color);
 }
 .nav-items::before {
     content: '';
@@ -49,7 +47,7 @@ body {
     width: 100%;
     height: 2px;
     border-radius: 4px;
-    background-color: var(--gray-color);
+    background-color: var(--darkblue-color);
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -61,13 +59,13 @@ body {
     transform: scaleX(1);
 }
 .hamburg-icon{
-    color: var(--blue-color);
+    color: var(--liteblue-color);
     font-size: 24px;
 }
 
 /* banner */
 .banner-section{
-    background-color: var(--white-color);
+    /* background-color: var(--lite-color); */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -82,7 +80,7 @@ body {
 .banner-contents h1{
     font-size: 60px;
     font-weight: 900;
-    color: var(--blue-color);
+    color: var(--liteblue-color);
     font-family: var(--primary-font);
 }
 .banner-contents h3{
@@ -90,10 +88,10 @@ body {
     font-size: 30px;
     font-family: var(--primary-font);
     font-weight: 500;
-    color: var(--dark-color);
+    color: var(--darkblue-color);
 }
 .banner-contents h3 span{
-    color: var(--blue-color);
+    color: var(--liteblue-color);
 }
 .banner-contents h5{
     /* padding-top: 10px; */
@@ -103,7 +101,7 @@ body {
     color: var(--gray-color);
 }
 .banner-contents h5 span{
-    color: var(--blue-color);
+    color: var(--liteblue-color);
 }
 
 /* about */
@@ -120,7 +118,7 @@ body {
     text-transform: uppercase;
     color: var(--white-color);
     letter-spacing: 1px;
-    -webkit-text-stroke: 1px var(--lite-gray);
+    -webkit-text-stroke: 1px var(--lite-color);
 }
 .main-heading-fg-text{
     position: absolute;
@@ -128,23 +126,24 @@ body {
     font-size: 30px;
     font-weight: 600;
     font-family: var(--primary-font);
-    color: var(--blue-color);
+    color: var(--liteblue-color);
 }
 .desc{
     font-size: 24px;
     font-family: var(--primary-font);
-    color: var(--dark-color);
+    color: var(--darkblue-color);
 }
 .sub-desc{
     font-size: 16px;
     font-family: var(--secondary-font);
-    color: var(--dark-color);
+    color: var(--darkblue-color);
 }
 .sub-desc span{
-    color: var(--blue-color);
+    color: var(--liteblue-color);
 }
 .quote{
     font-size: 16px;
+    color: var(--darkblue-color);
     font-family: var(--primary-font);
 }
 .about-img{
@@ -157,7 +156,7 @@ body {
     padding-top: 10px;
     font-size: 16px;
     font-family: var(--parimary-font);
-    color: var(--gray-color);
+    color: var(--darkblue-color);
 }
 
 /* education */
@@ -167,36 +166,38 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* cards */
 .cards{
     margin-top: 20px;
 }
 .card-bg{
-    background-color: var(--white-color);
     padding: 20px;
 }
 .card-heads{
-    color: var(--dark-color);
+    color: var(--darkblue-color);
     font-size: 18px;
     font-family: var(--primary-font);
 }
 .card-titles{
-    color: var(--blue-color);
+    color: var(--liteblue-color);
     font-size: 18px;
     font-family: var(--secondary-font);
 }
 .card-subtitles{
-    color: var(--gray-color);
+    color: var(--liteblue-color);
     font-size: 16px;
     font-size: var(--parimary-font);
 }
-/* .card-bg:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-} */
 
 /* progressbar */
 .progressbar-div{
     margin-top: 20px;
 }
+.progress-bar{
+    background-color: var(--liteblue-color);
+}
+
 /* marquee items */
 .marquee {
     --gap: 50px; /* Adjust the gap between items as needed */
@@ -225,8 +226,8 @@ body {
 
 /* project */
 .badge-item{
-    background-color: var(--blue-color);
-    color: var(--white-color);
+    background-color: var(--lite-color);
+    color: var(--liteblue-color);
 }
 .project-links{
     display: flex;
@@ -234,29 +235,29 @@ body {
 }
 .project-links a{
     text-decoration: none;
-    color: var(--gray-color);
+    color: var(--darkblue-color);
     font-family: var(--primary-font);
     text-transform: capitalize;
     font-size: 16px;
 }
 .project-links a:hover{
-    color: var(--blue-color);
+    color: var(--liteblue-color);
 }
 .view-all-projects{
     display: flex;
     justify-content: center;
 }
 .view-all-projects a span{
-    color: var(--gray-color);
-    background-color: var(--lite-gray);
+    color: var(--liteblue-color);
+    background-color: var(--lite-color);
     font-family: var(--primary-font);
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
 }
 .view-all-projects a span:hover{
-    background-color: var(--white-color);
-    color: var(--gray-color);
+    background-color: var(--liteblue-color);
+    color: var(--lite-color);
 }
 
 /* contact */
@@ -264,25 +265,26 @@ body {
     font-size: 16px; 
     font-family: var(--parimary-font);
     font-weight: 500;
-    color: var(--dark-color);
+    color: var(--darkblue-color);
 }
 .mail-tel-link a{
     text-decoration: none;
-    color: var(--dark-color);
+    color: var(--darkblue-color);
 }
 .mail-tel-link a:hover{
-    color: var(--blue-color);
+    color: var(--liteblue-color);
 }
 .mail-text{
     display: flex;
     justify-content: center;
     font-size: 24px;
     font-family: var(--secondary-font);
+    color: var(--liteblue-color);
 }
 .form-control {
     border-radius: 10px;
     border: none;
-    background: var(--lite-gray)
+    background: var(--lite-color)
 }
 .form-control:active, .form-control:focus {
     outline: none;
@@ -291,17 +293,17 @@ body {
     background: var(--gray-gray); 
 }
 .form-group input{
-    color: var(--dark-color);
+    color: var(--darkblue-color);
     font-family: var(--parimary-font);
     font-size: 16px;
 }
 .form-group textarea{
-    color: var(--dark-color);
+    color: var(--darkblue-color);
     font-family: var(--parimary-font);
     font-size: 16px;
 }
 ::placeholder{
-    color: var(--gray-color) !important;
+    color: var(--darkblue-color) !important;
     font-family: var(--secondary-font);
     font-size: 16px;
 }
@@ -310,13 +312,18 @@ body {
     justify-content: center;
 }
 .msg-send .send-btn{
-    background-color: var(--blue-color);
-    color: var(--white-color);
+    background-color: var(--lite-color);
+    color: var(--liteblue-color);
     font-size: 16px;
+    font-weight: 700;
     font-family: var(--parimary-font);
     width: 150px;
     height: auto;
     border-radius: 50px;
+}
+.msg-send .send-btn:hover{
+    background-color: var(--darkblue-color);
+    color: var(--lite-color);
 }
 
 /* footer */
@@ -328,7 +335,7 @@ body {
 .account-icons p{
     padding-right: 30px;
     font-size: 20px;
-    color: var(--blue-color);
+    color: var(--darkblue-color);
 }
 .footer{
     display: flex;
@@ -339,7 +346,7 @@ body {
 .footer-text1{
     font-size: 18px;
     font-family: var(--secondary-font);
-    color: var(--gray-color);
+    color: var(--liteblue-color);
 }
 .footer-two{
     display: flex;
@@ -347,7 +354,7 @@ body {
 }
 .footer-text2{
     font-size: 16px;
-    color: var(--blue-color);
+    color: var(--darkblue-color);
     font-family: var(--secondary-font);
 
 }
