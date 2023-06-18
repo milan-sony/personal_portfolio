@@ -116,7 +116,7 @@ body {
     background-color: var(--lite-color);
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
