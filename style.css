@@ -191,6 +191,7 @@ body {
 .about-img img{
     width: 50%;
     height: auto;
+    border-radius: 20px;
 }
 .about-img-text{
     margin: 0;
@@ -425,6 +426,7 @@ body {
     font-family: var(--secondary-font);
 
 }
+
 /* Custom Media Query */
 /* Small devices */
 @media (max-width: 576px) {
@@ -442,8 +444,6 @@ body {
     }
     .about-img img{
         padding-top: 20px;
-        width: 50%;
-        height: auto;
     }
 }
 /* Medium devices */
@@ -453,8 +453,6 @@ body {
     }
     .about-img img{
         padding-top: 20px;
-        width: 40%;
-        height: auto;
     }
 }
 /* Large devices */
@@ -464,8 +462,6 @@ body {
     }
     .about-img img{
         padding-top: 20px;
-        width: 30%;
-        height: auto;
     }
 }
 /* Extra large devices */
