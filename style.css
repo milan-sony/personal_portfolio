@@ -107,6 +107,9 @@ body {
 
 /* about */
 .about-section{
+    padding-bottom: 20px;
+}
+.about-section2{
     padding-bottom: 40px;
 }
 .main-heading-div{
@@ -177,7 +180,7 @@ body {
 
 /* education */
 .education-section{
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .head-text{
     display: flex;
@@ -206,14 +209,12 @@ body {
     font-size: var(--parimary-font);
 }
 
-/* skills */
-.skills-section{
-    padding-top: 40px;
-}
-
 /* progressbar */
+.progress-bar-section{
+    padding-bottom: 40px;
+}
 .progressbar-div{
-    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .progress-bar{
     background-color: var(--liteblue-color);
@@ -245,13 +246,14 @@ body {
     list-style-type: none;
 }
 
+/* experience */
 .experience-section{
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 /* project */
 .project-section{
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .badge-item{
     background-color: var(--lite-color);
@@ -290,7 +292,7 @@ body {
 
 /* contact */
 .contact-section{
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .contact-info p{
     margin: 0;
@@ -343,6 +345,7 @@ body {
     font-size: 16px;
 }
 .msg-send{
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -363,13 +366,12 @@ body {
 
 /* footer */
 .account-icons{
-    padding-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
 }
 .account-icons a{
-    /* padding-right: 30px; */
     font-size: 20px;
     color: var(--darkblue-color);
 }
@@ -377,7 +379,6 @@ body {
     color: var(--liteblue-color);
 }
 .footer{
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
