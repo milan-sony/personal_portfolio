@@ -105,6 +105,28 @@ body {
     color: var(--liteblue-color);
 }
 
+/* scroll btn */
+.scroll-to-top{
+    display: flex;
+    justify-content: flex-end;
+}
+.scroll-btn{
+    position: fixed;
+    bottom: 16px;
+    background-color: var(--lite-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--liteblue-color);
+    display: none;
+    transition: all .4s;
+    cursor: pointer;
+}
+
 /* about */
 .about-section{
     padding-bottom: 20px;
