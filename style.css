@@ -176,6 +176,16 @@ body {
 .sub-desc span{
     color: var(--liteblue-color);
 }
+/* more info */
+.more-info-items{
+    display: none;
+}
+.more-info-btn:hover{
+    color: var(--darkblue-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .quote{
     margin: 0;
     font-size: 16px;
