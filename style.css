@@ -126,6 +126,10 @@ body {
     transition: all .4s;
     cursor: pointer;
 }
+.scroll-btn:hover{
+    background-color: var(--darkblue-color);
+    color: var(--lite-color);
+}
 
 /* about */
 .about-section{

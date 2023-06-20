@@ -1,5 +1,4 @@
 // change title when tab changes
-
 let docTitle = document.title;
 window.addEventListener("blur", () =>{
     document.title = "Milan Sony 🛸";
