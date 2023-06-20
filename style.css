@@ -506,7 +506,25 @@ body {
     font-size: 16px;
     color: var(--darkblue-color);
     font-family: var(--secondary-font);
+}
 
+/* heart beat animation */
+@keyframes heartbeat {
+    0%{
+    transform: scale(1);
+    color: var(--darkblue-color);
+    }
+    50%{
+    transform: scale(1.2);
+    color: red;
+    }
+    100%{
+    transform: scale(1);
+    color: var(--darkblue-color);
+    }
+}
+.footer-text2 i{
+    animation: heartbeat 1s infinite;
 }
 
 /* Custom Media Query */
