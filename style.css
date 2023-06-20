@@ -407,9 +407,11 @@ body {
 .account-icons a{
     font-size: 20px;
     color: var(--darkblue-color);
+    transition: all 0.3s linear;
 }
 .account-icons a:hover{
     color: var(--liteblue-color);
+    transform: scale(1.5);
 }
 .footer{
     display: flex;
