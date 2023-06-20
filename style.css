@@ -2,6 +2,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 :root {
     --darkblue-color: #112D4E;
     --liteblue-color: #3F72AF;
@@ -21,9 +22,11 @@ html {
     background: var(--darkblue-color);
     border-radius: 10px;
 }
+
 body {
     background-color: var(--white-color);
 }
+
 /* navbar */
 .navbar-div{
     background-color: var(--white-color)
