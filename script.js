@@ -44,3 +44,11 @@ document.addEventListener('click', e => {
         cursor.classList.remove("expand");
     }, 500);
 });
+
+// mouse click sound
+var soundPath = "./assets/arcade.wav";
+var audio = new Audio(soundPath);
+function playSound() {
+    audio.play();
+}
+document.addEventListener("click", playSound);

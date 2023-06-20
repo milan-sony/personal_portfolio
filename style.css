@@ -27,6 +27,52 @@ body {
     background-color: var(--white-color);
 }
 
+/* custom cursor */
+.cursor {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 111;
+    border: 1px solid var(--darkblue-color);
+    transition: all 0.2s ease-out;
+    animation: moveCursor1 .5s infinite alternate;
+}
+.expand {
+    background: transparent;
+    animation: moveCursor2 .5s forwards;
+    border: 1px solid var(--darkblue-color);
+}
+@keyframes moveCursor1 {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.8);
+    }
+}
+@keyframes moveCursor2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
 /* navbar */
 .navbar-div{
     background-color: var(--white-color)
@@ -75,54 +121,6 @@ body {
 .hamburg-icon{
     color: var(--liteblue-color);
     font-size: 24px;
-}
-
-.cursor {
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 50%;
-    background: transparent;
-    pointer-events: none;
-    z-index: 111;
-    border: 1px solid var(--darkblue-color);
-    transition: all 0.2s ease-out;
-    animation: moveCursor1 .5s infinite alternate;
-}
-
-.expand {
-    background: transparent;
-    animation: moveCursor2 .5s forwards;
-    border: 1px solid var(--darkblue-color);
-}
-
-@keyframes moveCursor1 {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(.8);
-    }
-}
-
-@keyframes moveCursor2 {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(2);
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 0;
-    }
 }
 
 /* banner */
@@ -241,6 +239,7 @@ body {
 .sub-desc span{
     color: var(--liteblue-color);
 }
+
 /* more info */
 .more-info-items{
     display: none;
