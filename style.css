@@ -10,6 +10,17 @@ html {
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Roboto Mono', monospace;
 }
+/* custom scrollbar */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: var(--lite-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--darkblue-color);
+    border-radius: 10px;
+}
 body {
     background-color: var(--white-color);
 }
