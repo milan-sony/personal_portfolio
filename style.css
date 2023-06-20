@@ -74,7 +74,7 @@ body {
 /* custom mouse select colour */
 ::selection {
     background-color: var(--lite-color);
-    color: var(--darkblue-color);
+    color: var(--liteblue-color);
 }
 
 /* navbar */
