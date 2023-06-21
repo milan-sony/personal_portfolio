@@ -4,6 +4,10 @@ html {
 }
 
 :root {
+    /* --darkblue-color: #DDE6ED;
+    --liteblue-color: #9DB2BF;
+    --lite-color: #526D82;
+    --white-color: #27374D; */
     --darkblue-color: #112D4E;
     --liteblue-color: #3F72AF;
     --lite-color: #DBE2EF;
@@ -143,6 +147,7 @@ body {
     align-items: center; 
 }
 .banner-head1{
+    padding-top: 100px;
     margin: 0;
     font-size: 60px;
     font-weight: 900;
@@ -164,6 +169,7 @@ body {
     text-align: center;
     font-family: var(--secondary-font);
     color: var(--darkblue-color);
+    padding-bottom: 100px;
 }
 .banner-head3 span{
     color: var(--liteblue-color);
@@ -194,6 +200,23 @@ body {
     color: var(--lite-color);
 }
 
+/* change theme */
+.theme-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.theme-section p{
+    margin: 0;
+}
+.theme-head{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
 /* about */
 .about-section{
     padding-bottom: 20px;
@@ -319,6 +342,12 @@ body {
 }
 .progress-bar{
     background-color: var(--liteblue-color);
+    color: var(--lite-color);
+}
+.progress-bar-title{
+    color: var(--darkblue-color);
+    font-size: 16px;
+    font-family: var(--secondary-font);
 }
 
 /* marquee items */
@@ -389,7 +418,7 @@ body {
     font-weight: 500;
 }
 .view-all-projects a span:hover{
-    background-color: var(--liteblue-color);
+    background-color: var(--darkblue-color);
     color: var(--lite-color);
 }
 
@@ -430,9 +459,13 @@ body {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: var(--gray-gray); 
+    background: var(--lite-color);
+    color: var(--darkblue-color); 
+    font-family: var(--parimary-font);
+    font-size: 16px;
 }
 .form-group input{
+    /* color: var(--darkblue-color); */
     color: var(--darkblue-color);
     font-family: var(--parimary-font);
     font-size: 16px;
