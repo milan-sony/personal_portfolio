@@ -32,8 +32,7 @@ function moreInfo(){
 }
 
 // custom mouse
-const cursor = document.querySelector('.cursor');
-
+let cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', e => {
     cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
 });
@@ -46,9 +45,36 @@ document.addEventListener('click', e => {
 });
 
 // mouse click sound
-var soundPath = "./assets/arcade.wav";
-var audio = new Audio(soundPath);
+let soundPath = "./assets/arcade.wav";
+let audio = new Audio(soundPath);
 function playSound() {
     audio.play();
 }
 document.addEventListener("click", playSound);
+
+// dark theme
+let themeIcon = document.getElementById("theme-icon");
+function darkMode(){
+    let setTheme = document.body;
+    setTheme.classList.toggle("dark-theme");
+    let theme;
+    if(setTheme.classList.contains("dark-theme")){
+        theme = "dark";
+        themeIcon.innerHTML = "🌙";
+    }
+    else{
+        theme = "light";
+        themeIcon.innerHTML = "🌞";
+    }
+    // save data to local storge
+    localStorage.setItem("theme", JSON.stringify(theme));
+}
+// get data from local storage
+let getTheme = JSON.parse(localStorage.getItem("theme"));
+if(getTheme == "dark"){
+    document.body.classList = "dark-theme";
+    themeIcon.innerHTML = "🌙";
+}
+else{
+    themeIcon.innerHTML = "🌞";
+}

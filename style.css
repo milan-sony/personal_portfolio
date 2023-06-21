@@ -4,16 +4,18 @@ html {
 }
 
 :root {
-    /* --darkblue-color: #DDE6ED;
-    --liteblue-color: #9DB2BF;
-    --lite-color: #526D82;
-    --white-color: #27374D; */
     --darkblue-color: #112D4E;
     --liteblue-color: #3F72AF;
     --lite-color: #DBE2EF;
     --white-color: #F9F7F7;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Roboto Mono', monospace;
+}
+.dark-theme{
+    --darkblue-color: #DDE6ED;
+    --liteblue-color: #9DB2BF;
+    --lite-color: #526D82;
+    --white-color: #27374D;
 }
 
 /* custom scrollbar */
@@ -147,7 +149,7 @@ body {
     align-items: center; 
 }
 .banner-head1{
-    padding-top: 100px;
+    padding-top: 160px;
     margin: 0;
     font-size: 60px;
     font-weight: 900;
@@ -169,7 +171,7 @@ body {
     text-align: center;
     font-family: var(--secondary-font);
     color: var(--darkblue-color);
-    padding-bottom: 100px;
+    padding-bottom: 160px;
 }
 .banner-head3 span{
     color: var(--liteblue-color);
@@ -204,19 +206,24 @@ body {
 .theme-section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
+    align-items: flex-start;
 }
 .theme-section p{
     margin: 0;
 }
 .theme-head{
-    font-size: 18px;
+    font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
     font-family: var(--secondary-font);
+    color: var(--darkblue-color);
 }
+.theme-desc{
+    font-size: 14px;
+    font-family: var(--parimary-font);
+    color: var(--lite-color);
+}
+
 /* about */
 .about-section{
     padding-bottom: 20px;
@@ -563,14 +570,16 @@ body {
 /* Custom Media Query */
 /* Small devices */
 @media (max-width: 576px) {
-    .banner-contents h1{
+    .banner-head1{
+        padding-top: 180px;
         font-size: 30px;
     }
-    .banner-contents h3{
+    .banner-head2{
         font-size: 24px;
     }
-    .banner-contents h5{
+    .banner-head3{
         font-size: 16px;
+        padding-bottom: 150px;
     }
     .head-text{
         padding-bottom: 20px;
@@ -581,6 +590,9 @@ body {
 }
 /* Medium devices */
 @media (max-width: 768px) {
+    .banner-head3{
+        padding-bottom: 130px;
+    }
     .head-text{
         padding-bottom: 20px;
     }
