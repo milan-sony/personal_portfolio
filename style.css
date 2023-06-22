@@ -135,7 +135,6 @@ body {
 
 /* banner */
 .banner-section{
-    /* background-color: var(--lite-color); */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -223,6 +222,12 @@ body {
     font-family: var(--parimary-font);
     color: var(--lite-color);
 }
+.theme-icon:hover{
+    background: var(--liteblue-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 
 /* about */
 .about-section{
@@ -273,17 +278,6 @@ body {
 .sub-desc span{
     color: var(--liteblue-color);
 }
-
-/* more info */
-.more-info-items{
-    display: none;
-}
-.more-info-btn:hover{
-    color: var(--darkblue-color);
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .quote{
     margin: 0;
     font-size: 16px;
@@ -307,6 +301,16 @@ body {
     font-size: 16px;
     font-family: var(--parimary-font);
     color: var(--darkblue-color);
+}
+
+/* more info */
+.more-info-items{
+    display: none;
+}
+.more-info-btn:hover{
+    color: var(--darkblue-color);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* education */
@@ -472,7 +476,6 @@ body {
     font-size: 16px;
 }
 .form-group input{
-    /* color: var(--darkblue-color); */
     color: var(--darkblue-color);
     font-family: var(--parimary-font);
     font-size: 16px;
@@ -571,7 +574,7 @@ body {
 /* Small devices */
 @media (max-width: 576px) {
     .banner-head1{
-        padding-top: 180px;
+        padding-top: 120px;
         font-size: 30px;
     }
     .banner-head2{
@@ -591,7 +594,7 @@ body {
 /* Medium devices */
 @media (max-width: 768px) {
     .banner-head3{
-        padding-bottom: 130px;
+        padding-bottom: 120px;
     }
     .head-text{
         padding-bottom: 20px;

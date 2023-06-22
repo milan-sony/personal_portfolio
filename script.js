@@ -64,7 +64,7 @@ function darkMode(){
     }
     else{
         theme = "light";
-        themeIcon.innerHTML = "🌞";
+        themeIcon.innerHTML = "☀️";
     }
     // save data to local storge
     localStorage.setItem("theme", JSON.stringify(theme));
@@ -76,5 +76,13 @@ if(getTheme == "dark"){
     themeIcon.innerHTML = "🌙";
 }
 else{
-    themeIcon.innerHTML = "🌞";
+    themeIcon.innerHTML = "☀️";
 }
+
+// today's day
+let toDaySpan = document.getElementById("today");
+let todayObj = new Date();
+let dayNumber = todayObj.getDay();
+let daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+let day = daylist[dayNumber]+".";
+toDaySpan.innerHTML = day;
