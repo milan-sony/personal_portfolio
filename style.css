@@ -589,7 +589,6 @@ body {
 .loading-txt{
     font-family: var(--secondary-font);
     font-size: 18px;
-    /* color: var(--lite-color); */
     text-transform: lowercase;
     font-weight: 500;
 }
