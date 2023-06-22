@@ -7,6 +7,12 @@ window.addEventListener("focus", () =>{
     document.title = docTitle;
 })
 
+// preloader
+window.onload=function(){
+    document.getElementById("loader").style.display="none";
+    document.getElementById("content").style.display="block";
+};
+
 // dark theme
 let themeIcon = document.getElementById("theme-icon");
 function darkMode(){
