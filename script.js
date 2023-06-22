@@ -7,51 +7,6 @@ window.addEventListener("focus", () =>{
     document.title = docTitle;
 })
 
-// scroll to top btn
-let ScrollToTop = document.querySelector(".scroll-btn");
-window.addEventListener("scroll", () =>{
-    if(window.scrollY > 100){
-        ScrollToTop.style.display = "flex";
-    }else{
-        ScrollToTop.style.display = "none";
-    }
-})
-
-// more info
-let moreInfoItem = document.querySelector(".more-info-items");
-let display = 0;
-function moreInfo(){
-    if(display == 0){
-        moreInfoItem.style.display = "block";
-        display = 1 ;
-    }
-    else{
-        moreInfoItem.style.display = "none";
-        display = 0;
-    }
-}
-
-// custom mouse
-let cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-});
-
-document.addEventListener('click', e => {
-    cursor.classList.add("expand");
-    setTimeout(() => {
-        cursor.classList.remove("expand");
-    }, 500);
-});
-
-// mouse click sound
-let soundPath = "./assets/arcade.wav";
-let audio = new Audio(soundPath);
-function playSound() {
-    audio.play();
-}
-document.addEventListener("click", playSound);
-
 // dark theme
 let themeIcon = document.getElementById("theme-icon");
 function darkMode(){
@@ -77,6 +32,51 @@ if(getTheme == "dark"){
 }
 else{
     themeIcon.innerHTML = "☀️";
+}
+
+// custom mouse
+let cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+});
+
+document.addEventListener('click', e => {
+    cursor.classList.add("expand");
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500);
+});
+
+// mouse click sound
+let soundPath = "./assets/arcade.wav";
+let audio = new Audio(soundPath);
+function playSound() {
+    audio.play();
+}
+document.addEventListener("click", playSound);
+
+// scroll to top btn
+let ScrollToTop = document.querySelector(".scroll-btn");
+window.addEventListener("scroll", () =>{
+    if(window.scrollY > 100){
+        ScrollToTop.style.display = "flex";
+    }else{
+        ScrollToTop.style.display = "none";
+    }
+})
+
+// more info
+let moreInfoItem = document.querySelector(".more-info-items");
+let display = 0;
+function moreInfo(){
+    if(display == 0){
+        moreInfoItem.style.display = "block";
+        display = 1 ;
+    }
+    else{
+        moreInfoItem.style.display = "none";
+        display = 0;
+    }
 }
 
 // today's day
