@@ -233,7 +233,10 @@ body {
     padding-bottom: 20px;
 }
 .about-section2{
-    padding-bottom: 40px;
+    padding-bottom: 80px;
+}
+.about-desc{
+    padding-top: 20px;
 }
 .main-heading-div{
     position: relative;
@@ -361,6 +364,9 @@ body {
 }
 
 /* marquee items */
+.marquee-section{
+    padding-bottom: 60px;
+}
 .marquee {
     --gap: 50px; /* Adjust the gap between items as needed */
     display: flex;
@@ -370,7 +376,6 @@ body {
 }
 .marquee_content {
     margin: 0;
-    padding-bottom: 20px;
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
@@ -395,7 +400,7 @@ body {
 
 /* project */
 .project-section{
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 }
 .badge-item{
     background-color: var(--lite-color);
@@ -435,6 +440,9 @@ body {
 /* contact */
 .contact-section{
     padding-bottom: 40px;
+}
+.contact-info{
+    padding-top: 20px;
 }
 .contact-info p{
     margin: 0;
