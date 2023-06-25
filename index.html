@@ -449,7 +449,8 @@
           </div>
           <div class="contact-box">
             <h5 class="mail-text" data-aos="fade-in">Send me a message👇🏼</h5>
-            <form action="https://formspree.io/f/xgejwodk" method="post">
+            <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server#readme -->
+            <form action="https://script.google.com/macros/s/AKfycbzbEbzI6rfM-PqFHzO05y_SmWejj-ZfB8OpjzOr9W3kwNp9kD1-G5c9lyN-4b1nBtpY/exec" method="post" class="gform">
               <div class="form-group" data-aos="fade-in">
                 <input type="text" class="form-control" placeholder="Name" name="name" id="name" required>
               </div>
@@ -461,6 +462,9 @@
               </div>
               <div class="form-group msg-send" data-aos="fade-in">
                 <input type="submit" value="Send 🚀" class="send-btn">
+              </div>
+              <div style="display:none" class="thankyou_message contact-msg">
+                <p>Thanks for the message. I will get back to you soon!</p>
               </div>
             </form>
           </div>
@@ -491,6 +495,9 @@
   </div>
   </div>
   </div>
+
+  <!-- form response -->
+  <script data-cfasync="false" type="text/javascript" src="./form-submission-handler.js"></script>
 
   <!-- custom javaScript -->
   <script src="./script.js"></script>
