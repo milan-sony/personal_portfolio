@@ -514,6 +514,7 @@ body {
     font-size: 16px;
 }
 .form-group textarea{
+    height: 120px;
     color: var(--darkblue-color);
     font-family: var(--parimary-font);
     font-size: 16px;
