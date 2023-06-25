@@ -147,7 +147,7 @@ body {
     align-items: center; 
 }
 .banner-head1{
-    padding-top: 160px;
+    padding-top: 120px;
     margin: 0;
     font-size: 60px;
     font-weight: 900;
@@ -169,10 +169,26 @@ body {
     text-align: center;
     font-family: var(--secondary-font);
     color: var(--darkblue-color);
-    padding-bottom: 160px;
+    margin-bottom: 60px;
 }
 .banner-head3 span{
     color: var(--liteblue-color);
+}
+.resume-btn{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--liteblue-color);
+    background: var(--lite-color);
+    padding: 12px 50px;
+    border-radius: 50px;
+    margin-bottom: 120px;
+}
+.resume-btn:hover{
+    text-decoration: none;
+    background-color: var(--liteblue-color);
+    color: var(--lite-color);
 }
 
 /* scroll btn */
@@ -436,6 +452,7 @@ body {
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
+    padding: 10px 20px;
 }
 .view-all-projects a span:hover{
     background-color: var(--darkblue-color);
@@ -511,17 +528,18 @@ body {
     display: flex;
     justify-content: center;
 }
-.msg-send .send-btn{
-    background-color: var(--lite-color);
-    color: var(--liteblue-color);
+.send-btn{
     font-size: 16px;
     font-weight: 700;
-    font-family: var(--parimary-font);
-    width: 150px;
-    height: auto;
+    text-transform: capitalize;
+    font-family: var(--primary-font);
+    color: var(--liteblue-color);
+    background: var(--lite-color);
+    padding: 12px 50px;
     border-radius: 50px;
+    border: none;
 }
-.msg-send .send-btn:hover{
+.send-btn:hover{
     background-color: var(--darkblue-color);
     color: var(--lite-color);
 }
@@ -634,7 +652,6 @@ body {
 /* Small devices */
 @media (max-width: 576px) {
     .banner-head1{
-        padding-top: 120px;
         font-size: 30px;
     }
     .banner-head2{
@@ -642,7 +659,6 @@ body {
     }
     .banner-head3{
         font-size: 16px;
-        padding-bottom: 150px;
     }
     .head-text{
         padding-bottom: 20px;
@@ -653,9 +669,6 @@ body {
 }
 /* Medium devices */
 @media (max-width: 768px) {
-    .banner-head3{
-        padding-bottom: 120px;
-    }
     .head-text{
         padding-bottom: 20px;
     }
