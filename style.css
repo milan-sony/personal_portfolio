@@ -535,6 +535,7 @@ body {
     padding-bottom: 40px;
 }
 .account-icons a{
+    margin: 0 25px;
     font-size: 20px;
     color: var(--darkblue-color);
     transition: all 0.3s linear;
