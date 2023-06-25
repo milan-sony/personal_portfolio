@@ -488,6 +488,10 @@ body {
     font-family: var(--parimary-font);
     font-size: 16px;
 }
+.form-group{
+    margin: 0;
+    padding-bottom: 20px;
+}
 .form-group input{
     color: var(--darkblue-color);
     font-family: var(--parimary-font);
