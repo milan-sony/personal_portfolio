@@ -85,6 +85,10 @@ function moreInfo(){
     }
 }
 
+// marquee elements
+let copy = document.querySelector(".marquee-items").cloneNode(true);
+document.querySelector(".marquee").appendChild(copy);
+
 // today's day
 let toDaySpan = document.getElementById("today");
 let todayObj = new Date();

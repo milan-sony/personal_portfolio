@@ -369,34 +369,33 @@ body {
     font-family: var(--secondary-font);
 }
 
-/* marquee items */
+/* marquee elements */
 .marquee-section{
     padding-bottom: 60px;
 }
-.marquee {
-    --gap: 50px; /* Adjust the gap between items as needed */
-    display: flex;
+@keyframes marquee-animation {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+.marquee{
     overflow: hidden;
-    user-select: none;
-    gap: var(--gap);
+    white-space: nowrap;
 }
-.marquee_content {
-    margin: 0;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: space-around;
-    min-width: 100%;
-    gap: var(--gap);
+.marquee:hover .marquee-items{
+    animation-play-state: paused;
 }
-@keyframes marquee {
-    100% { transform: translateX(0%); }
-    0% { transform: translateX(-100%); }
+.marquee-items{
+    display: inline-block;
+    animation: 30s marquee-animation infinite linear;
 }
-.marquee_content {
-    animation: marquee 20s linear infinite;
-}
-.marquee_content li{
-    list-style-type: none;
+.marquee-items img{
+    height: 30px;
+    width: 30px;
+    margin: 0 40px;
 }
 
 /* experience */
