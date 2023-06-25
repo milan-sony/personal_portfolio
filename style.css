@@ -252,16 +252,7 @@ body {
     color: var(--lite-color);
 }
 
-/* about */
-.about-section{
-    padding-bottom: 20px;
-}
-.about-section2{
-    padding-bottom: 80px;
-}
-.about-desc{
-    padding-top: 20px;
-}
+/* main headings */
 .main-heading-div{
     position: relative;
     display: flex;
@@ -277,6 +268,10 @@ body {
     color: var(--white-color);
     letter-spacing: 1px;
     -webkit-text-stroke: 1px var(--lite-color);
+    text-shadow: 0px 0px 5px rgba(149, 157, 165, 0.2);
+}
+.main-heading-bg-text:hover{
+    text-shadow: 0px 0px 25px rgba(149, 157, 165, 0.5);
 }
 .main-heading-fg-text{
     margin: 0;
@@ -286,6 +281,17 @@ body {
     font-weight: 600;
     font-family: var(--primary-font);
     color: var(--liteblue-color);
+}
+
+/* about */
+.about-section{
+    padding-bottom: 20px;
+}
+.about-section2{
+    padding-bottom: 80px;
+}
+.about-desc{
+    padding-top: 20px;
 }
 .desc{
     margin: 0;
