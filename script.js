@@ -94,5 +94,5 @@ let toDaySpan = document.getElementById("today");
 let todayObj = new Date();
 let dayNumber = todayObj.getDay();
 let daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
-let day = daylist[dayNumber]+".";
+let day = daylist[dayNumber];
 toDaySpan.innerHTML = day;
