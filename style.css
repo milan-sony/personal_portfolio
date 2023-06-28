@@ -377,7 +377,7 @@ body {
 .card-subtitles{
     color: var(--liteblue-color);
     font-size: 16px;
-    font-size: var(--parimary-font);
+    font-family: var(--parimary-font);
 }
 
 /* progressbar */
