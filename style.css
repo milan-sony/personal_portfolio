@@ -4,8 +4,8 @@ html {
 }
 
 :root {
-    --darkblue-color: #050505;
-    --liteblue-color: #c3a984;
+    --dark-color: #050505;
+    --litegold-color: #c3a984;
     --lite-color: #d8d8d8;
     --white-color: #ffffff;
 
@@ -13,8 +13,8 @@ html {
     --secondary-font: 'Lato', sans-serif;
 }
 .dark-theme{
-    --darkblue-color: #ffffff;
-    --liteblue-color: #c3a984;
+    --dark-color: #ffffff;
+    --litegold-color: #c3a984;
     --lite-color: #d8d8d8;
     --white-color: #050505;
 }
@@ -27,7 +27,7 @@ html {
     background: var(--lite-color);
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--liteblue-color);
+    background: var(--litegold-color);
     border-radius: 50px;
 }
 
@@ -48,14 +48,14 @@ body {
     background: transparent;
     pointer-events: none;
     z-index: 111;
-    border: 1px solid var(--liteblue-color);
+    border: 1px solid var(--litegold-color);
     transition: all 0.2s ease-out;
     animation: moveCursor1 .5s infinite alternate;
 }
 .expand {
     background: transparent;
     animation: moveCursor2 .5s forwards;
-    border: 1px solid var(--liteblue-color);
+    border: 1px solid var(--litegold-color);
 }
 @keyframes moveCursor1 {
     from {
@@ -81,7 +81,7 @@ body {
 /* custom mouse select colour */
 ::selection {
     background-color: var(--lite-color);
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
 }
 
 /* navbar */
@@ -94,10 +94,10 @@ body {
     font-size: 24px;
     font-weight: 900;
     text-transform: capitalize;
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
 }
 .nav-name:hover{
-    color: var(--darkblue-color);
+    color: var(--dark-color);
 }
 .nav-items {
     position: relative;
@@ -106,10 +106,10 @@ body {
     font-weight: 500;
     text-transform: capitalize;
     letter-spacing: 1px;
-    color: var(--liteblue-color)
+    color: var(--litegold-color)
 }
 .nav-items:hover{
-    color: var(--darkblue-color);
+    color: var(--dark-color);
 }
 .nav-items::before {
     content: '';
@@ -117,7 +117,7 @@ body {
     width: 100%;
     height: 2px;
     border-radius: 4px;
-    background-color: var(--darkblue-color);
+    background-color: var(--dark-color);
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -129,7 +129,7 @@ body {
     transform: scaleX(1);
 }
 .hamburg-icon{
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
     font-size: 30px;
 }
 
@@ -152,7 +152,7 @@ body {
     margin: 0;
     font-size: 60px;
     font-weight: 900;
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
     font-family: var(--primary-font);
     padding-bottom: 20px;
 }
@@ -161,7 +161,7 @@ body {
     font-size: 30px;
     font-family: var(--primary-font);
     font-weight: 500;
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     padding-bottom: 10px;
 }
 .banner-head3{
@@ -169,27 +169,26 @@ body {
     font-size: 24px;
     text-align: center;
     font-family: var(--secondary-font);
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     margin-bottom: 60px;
 }
 .banner-head3 span{
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
 }
 .resume-btn{
     font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
     font-family: var(--secondary-font);
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
     background-color: var(--lite-color);
     padding: 12px 50px;
     border-radius: 50px;
     margin-bottom: 120px;
-    /* box-shadow: rgba(195, 169, 132, 0.5) 0px 8px 24px; */
 }
 .resume-btn:hover{
     text-decoration: none;
-    background-color: var(--liteblue-color);
+    background-color: var(--litegold-color);
     color: var(--lite-color);
     box-shadow: rgba(195, 169, 132, 0.5) 0px 8px 24px;
 }
@@ -210,7 +209,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
     display: none;
     cursor: pointer;
 }
@@ -235,7 +234,7 @@ body {
     text-transform: capitalize;
     font-weight: 500;
     font-family: var(--secondary-font);
-    color: var(--darkblue-color);
+    color: var(--dark-color);
 }
 .theme-head p{
     margin: 0;
@@ -266,9 +265,7 @@ body {
     font-weight: 900;
     font-family: var(--primary-font);
     text-transform: uppercase;
-    color: var(--liteblue-color);
-    /* letter-spacing: 1px; */
-    /* text-shadow: 0px 0px 5px rgba(149, 157, 165, 0.2); */
+    color: var(--litegold-color);
 }
 .main-heading-bg-text:hover{
     text-shadow: 0px 0px 25px rgba(195, 169, 132, 0.5);
@@ -281,7 +278,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     font-family: var(--primary-font);
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
 }
 
 /* about */
@@ -298,23 +295,23 @@ body {
     margin: 0;
     font-size: 24px;
     font-family: var(--primary-font);
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     padding-bottom: 20px;
 }
 .sub-desc{
     margin: 0;
     font-size: 16px;
     font-family: var(--secondary-font);
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     padding-bottom: 20px;
 }
 .sub-desc span{
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
 }
 .quote{
     margin: 0;
     font-size: 16px;
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     font-family: var(--primary-font);
 }
 .about-img{
@@ -333,7 +330,7 @@ body {
     padding-top: 10px;
     font-size: 16px;
     font-family: var(--primary-font);
-    color: var(--darkblue-color);
+    color: var(--dark-color);
 }
 
 /* more info */
@@ -341,7 +338,7 @@ body {
     display: none;
 }
 .more-info-btn:hover{
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     font-weight: bold;
     cursor: pointer;
 }
@@ -364,21 +361,20 @@ body {
     border-radius: 20px;
 }
 .cards:hover{
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     box-shadow: rgba(195, 169, 132, 0.5) 0px 8px 24px;
 }
 .card-heads{
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     font-size: 18px;
     font-family: var(--primary-font);
 }
 .card-titles{
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
     font-size: 18px;
     font-family: var(--secondary-font);
 }
 .card-subtitles{
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
     font-size: 16px;
     font-family: var(--primary-font);
 }
@@ -391,11 +387,11 @@ body {
     padding-bottom: 20px;
 }
 .progress-bar{
-    background-color: var(--liteblue-color);
+    background-color: var(--litegold-color);
     color: var(--lite-color);
 }
 .progress-bar-title{
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     font-size: 16px;
     font-family: var(--secondary-font);
 }
@@ -439,7 +435,7 @@ body {
     padding-bottom: 80px;
 }
 .badge-item{
-    background-color: var(--darkblue-color);
+    background-color: var(--dark-color);
     color: var(--white-color);
     font-family: var(--secondary-font);
 }
@@ -449,21 +445,21 @@ body {
 }
 .project-links a{
     text-decoration: none;
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     font-family: var(--primary-font);
     text-transform: capitalize;
     font-size: 16px;
 }
 .project-links a:hover{
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
 }
 .view-all-projects{
     display: flex;
     justify-content: center;
 }
 .view-all-projects a span{
-    background-color: var(--liteblue-color);
-    color: var(--darkblue-color);
+    background-color: var(--litegold-color);
+    color: var(--dark-color);
     font-family: var(--primary-font);
     font-size: 16px;
     text-transform: capitalize;
@@ -472,7 +468,7 @@ body {
 }
 .view-all-projects a span:hover{
     background: var(--white-color);
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
     box-shadow: rgba(195, 169, 132, 0.5) 0px 8px 24px;
 }
 
@@ -489,14 +485,14 @@ body {
     font-size: 16px; 
     font-family: var(--primary-font);
     font-weight: 500;
-    color: var(--darkblue-color);
+    color: var(--dark-color);
 }
 .mail-tel-link a{
     text-decoration: none;
-    color: var(--darkblue-color);
+    color: var(--dark-color);
 }
 .mail-tel-link a:hover{
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
 }
 .mail-text{
     margin: 0;
@@ -505,7 +501,7 @@ body {
     justify-content: center;
     font-size: 24px;
     font-family: var(--secondary-font);
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
 }
 .form-control {
     border-radius: 10px;
@@ -517,7 +513,7 @@ body {
     -webkit-box-shadow: none;
     box-shadow: none;
     background: var(--lite-color);
-    color: var(--darkblue-color); 
+    color: var(--dark-color); 
     font-family: var(--primary-font);
     font-size: 16px;
 }
@@ -526,18 +522,18 @@ body {
     padding-bottom: 20px;
 }
 .form-group input{
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     font-family: var(--primary-font);
     font-size: 16px;
 }
 .form-group textarea{
     height: 120px;
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     font-family: var(--primary-font);
     font-size: 16px;
 }
 ::placeholder{
-    color: var(--darkblue-color) !important;
+    color: var(--dark-color) !important;
     font-family: var(--secondary-font);
     font-size: 16px;
 }
@@ -551,14 +547,14 @@ body {
     font-weight: 700;
     text-transform: capitalize;
     font-family: var(--primary-font);
-    color: var(--darkblue-color);
-    background-color: var(--liteblue-color);
+    color: var(--dark-color);
+    background-color: var(--litegold-color);
     padding: 12px 50px;
     border-radius: 50px;
     border: none;
 }
 .send-btn:hover{
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
     background-color: var(--white-color);
     box-shadow: rgba(195, 169, 132, 0.5) 0px 8px 24px;
 }
@@ -568,7 +564,7 @@ body {
     font-family: var(--secondary-font);
     font-size: 16px;
     font-weight: 300;
-    color: var(--darkblue-color);
+    color: var(--dark-color);
 }
 
 /* footer */
@@ -581,11 +577,11 @@ body {
 .account-icons a{
     margin: 0 25px;
     font-size: 20px;
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     transition: all 0.3s linear;
 }
 .account-icons a:hover{
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
     transform: scale(1.5);
 }
 .footer{
@@ -599,7 +595,7 @@ body {
     padding-bottom: 20px;
     font-size: 18px;
     font-family: var(--secondary-font);
-    color: var(--liteblue-color);
+    color: var(--litegold-color);
 }
 .footer-two{
     display: flex;
@@ -611,7 +607,7 @@ body {
     margin: 0;
     padding-bottom: 20px;
     font-size: 16px;
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     font-family: var(--secondary-font);
 }
 
@@ -619,7 +615,7 @@ body {
 @keyframes heartbeat {
     0%{
     transform: scale(1);
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     }
     50%{
     transform: scale(1.2);
@@ -627,7 +623,7 @@ body {
     }
     100%{
     transform: scale(1);
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     }
 }
 .footer-text2 p{
@@ -660,7 +656,7 @@ body {
 @keyframes heartbeat2 {
     0%{
     transform: scale(1);
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     }
     50%{
     transform: scale(1.2);
@@ -668,7 +664,7 @@ body {
     }
     100%{
     transform: scale(1);
-    color: var(--darkblue-color);
+    color: var(--dark-color);
     }
 }
 .loading-txt{
