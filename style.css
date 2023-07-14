@@ -398,6 +398,7 @@ body {
 
 /* marquee elements */
 .marquee-section{
+    padding-top: 10px;
     padding-bottom: 60px;
 }
 @keyframes marquee-animation {
@@ -454,6 +455,7 @@ body {
     color: var(--litegold-color);
 }
 .view-all-projects{
+    padding-top: 10px;
     display: flex;
     justify-content: center;
 }
